@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Day 20</title>
+</head>
+<body>
+    <script>
+        let students = [
+  { name: "Ali", marks: 85 },
+  { name: "Sara", marks: 72 },
+  { name: "Ahmed", marks: 55 }
+];
+        let result = students.map(function(student){
+            let grade;
+            if (student.marks >= 80) {
+                grade = "A";
+            } else if (student.marks >= 60) {
+                grade = "B";
+            } else {
+                grade = "C";
+            }
+            return student.name + " got " + student.marks + " marks and grade " + grade;
+        });
+        console.log(result)
+    </script>
+</body>
+</html>

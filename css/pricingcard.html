@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Cards</title>
+    <style>
+        body{
+            background-color: #1e1e1e;
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            color: aliceblue;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 180px;
+        }
+        .card-1{
+            width: 300px;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            background-color: cadetblue;
+        }
+        .card-2{
+            width: 300px;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            background-color: cadetblue;
+        }
+        .card-3{
+            width: 300px;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            background-color: cadetblue;
+        }
+        .card-container button{
+            background-color:gold;
+            border-radius: 20px; 
+        }
+        .card-1:hover,
+        .card-2:hover,
+        .card-3:hover {
+        transform: scale(1.05);
+        background-color: #006400; 
+        transition: all 0.3s ease;
+        cursor: pointer;
+        }
+        .card-1 ul,
+        .card-2 ul,
+        .card-3 ul {
+        list-style-position: inside;
+        text-align: left;
+        padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: aliceblue;display:flex;justify-content:center;">Choose Spotify Plan</h1>
+    <div class="card-container">
+        <div class="card-1">
+            <h2 style="text-align:center">Indivitual</h2>
+            <h3>$9.99/month</h3>
+            <ul>
+                <li>Listen to music ad-free</li>
+                <li>Play anywhere-even offline</li>
+                <li>On-demand playback</li>
+            </ul>
+            <button>GET STARTED</button>
+        </div>
+        <div class="card-2">
+            <h2 style="text-align:center">Duo</h2>
+            <h3>$12.99/month</h3>
+            <ul>
+                <li>2 Premium Accounts</li>
+                <li>Duo Mix</li>
+                <li>Ad-free music listening</li>
+            </ul>
+            <button>GET STARTED</button>
+        </div>
+        <div class="card-3">
+            <h2 style="text-align:center">Family</h2>
+            <h3>$14.99/month</h3>
+            <ul>
+                <li>6 premium accounts</li>
+                <li>Family mix</li>
+                <li>Spotify Kidsk</li>
+            </ul>
+            <button>GET STARTED</button>
+        </div>
+    </div>
+</body>
+</html>

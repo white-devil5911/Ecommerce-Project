@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .card-1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: whitesmoke;
+            margin-top: 100px;
+            border-radius: 12px;
+            background-color:green;
+            border: 2px solid white;
+        }
+        .card-2{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: whitesmoke;
+            margin-top: 100px;
+            border-radius: 12px;
+            background-color:green;
+            border: 2px solid white;
+
+        }
+        .card-3{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: whitesmoke;
+            margin-top: 100px;
+            border-radius: 12px;
+            background-color:green;
+            border: 2px solid white;
+
+        }
+        .card-1:hover,
+        .card-2:hover,
+        .card-3:hover {
+        transform: scale(1.05);
+        background-color: #006400; 
+        transition: all 0.3s ease;
+        cursor: pointer;
+        }
+        .card-1 ul,
+        .card-2 ul,
+        .card-3 ul {
+        list-style-position: inside;
+        text-align: left;
+        padding-left: 20px;
+}
+</style>
+</head>
+<body>
+    <h1 style="color: whitesmoke;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Choose A Plan</h1>
+    <div class="card-container">
+    <div class="card-1">
+        <h2>Basic Plan</h2>
+        <h3>$5/month</h3>
+        <ul>
+        <li>Basic plan</li>
+        <li>Daily 5 Minutes Talk</li>
+        <li>Free 5 Games</li>
+        </ul>
+        <button style="background-color:chartreuse">Choose Plan</button>
+    </div>
+    <div class="card-2">
+        <h2>Student Plan</h2>
+        <h3>$10/month</h3>
+        <ul>
+        <li>Student plan</li>
+        <li>Daily 10 Minutes Talk</li>
+        <li>Free 10 Games</li>
+        </ul>
+        <button style="background-color:chartreuse">Choose Plan</button>
+    </div>
+    <div class="card-3">
+        <h2>Supreme Plan</h2>
+        <h3>$20/month</h3>
+        <ul>
+        <li>Supreme plan</li>
+        <li>Daily 20 Minutes Talk</li>
+        <li>Free 20 Games</li>
+        </ul>
+        <button style="background-color:chartreuse" >Choose Plan</button>
+    </div>
+    </div>
+</body>
+</html>

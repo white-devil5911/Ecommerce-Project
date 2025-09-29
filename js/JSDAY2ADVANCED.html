@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        let order = {
+            id: 101,
+            customer: {
+                name: "Qasim",
+                email: "qasim@example.com",
+                address: {
+                    city: "Lahore",
+                    country: "Pakistan"
+                }
+            },
+            items: [
+                { name: "Laptop", price: 900, quantity: 1 },
+                { name: "Mouse", price: 20, quantity: 2 }
+            ],
+            status: "pending"
+        };
+        console.log(Object.keys(order.customer))
+
+        let {name,email} = order.customer
+        console.log(name, email)
+
+        console.log(Object.entries(order.customer.address))
+
+        order.status = "shipped"
+
+        order.discount = 0.1
+
+        
+    </script>
+</body>
+</html>

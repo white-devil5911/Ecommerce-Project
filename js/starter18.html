@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let students = [
+        { name: "Ali", marks: 50 },
+        { name: "Sara", marks: 30 },
+        { name: "Ahmed", marks: 80 },
+    ];
+    let new_student = students.find(student => student.marks < 40);
+    console.log(new_student.name + " has failed with " + new_student.marks + " marks");
+    </script>
+</body>
+</html>

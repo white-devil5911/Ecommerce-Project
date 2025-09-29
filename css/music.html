@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Album</title>
+    <style>
+        body{
+            background-color: #121212;
+            color: aliceblue;
+        }
+        .player-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+        }
+        .album-art {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 250px;
+            width: 60%;
+        }
+        .album-art:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+        }        
+        .controls {
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .controls:hover {
+            background-color: #1db954;
+            color: white;
+            box-shadow: 0 0 15px #1db954;
+        } 
+        .progress-bar {
+            width: 80%;
+            height: 6px;
+            background-color: #333;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .progress-fill {
+            height: 100%;
+            background-color: #1db954;
+            transition: width 0.5s ease;
+        }               
+    </style>
+</head>
+<body>
+    <div class="player-container">
+        <img class="album-art" src="musicplayer.jpg" style="border-radius: 10px;margin-bottom:10px;width: 25%;
+            border: 2px solid white;">
+        <h3>Celebrity Killer</h3>
+        <p style="padding-bottom: 20px;">Sidhu Moose Wala</p>
+        <div class="controls" style="display: flex;justify-content:space-evenly;font-size:larger">
+           ⏮️  ▶️  ⏭️
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 50%;"></div>
+        </div>
+    </div>      
+</body>
+</html>

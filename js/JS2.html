@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width", initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let book = {
+            title: "Think & Grow Rich",
+            author: "Napoloen Hill",
+            year: 2015
+        };
+        console.log(Object.keys(book));
+
+        let { title, author, year} = book;
+        console.log(title,author,year);
+
+        book.genre = "Self-Help";
+        console.log(book);
+
+        let obj = {
+            rating: 4.5
+        };
+
+        let merged = {...book, ...obj};
+        console.log(merged)
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding-top: 100px;
+            transition: 0.3s;
+        }
+
+        .dark-mode {
+            background-color: #222;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, Qasim!</h1>
+    <p>This is your first interactive JS + HTML project.</p>
+    <button onclick="toggleMode()">Enable Dark Mode</button>
+    <script>
+        let darkMode = false;
+        function toggleMode() {
+            const body = document.body;
+            const button = document.querySelector("button");
+            darkMode = !darkMode;
+            if (darkMode) {
+                body.classList.add("dark-mode");
+                button.textContent = "Disable Dark Mode";
+            } else {
+                body.classList.remove("dark-mode");
+                button.textContent = "Enable Dark Mode";
+            }
+        }
+    </script>
+</body>
+</html>

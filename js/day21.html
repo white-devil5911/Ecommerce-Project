@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown</title>
+</head>
+<body>
+    <h1>Open Console</h1>
+    <script>
+        let count = 5;
+
+        let timer = setInterval(() => {
+            if (count > 0) {
+                alert(count);
+                count--;
+            } else {
+                console.log("Time's up!");
+                clearInterval(timer); // stop the interval
+            }
+        }, 1000); // runs every 1 second
+    </script>
+</body>
+</html>

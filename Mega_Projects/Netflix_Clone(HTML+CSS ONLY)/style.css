@@ -1,0 +1,386 @@
+body{
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url("netflix_background.jpg") no-repeat center center/cover;
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body::before {
+    content: "";                
+    position: absolute;         
+    width: 100%;               
+    height: 100%;              
+    background: 
+    linear-gradient(to top, rgba(1,1,1,1) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.6) 100%),
+    url("netflix_background.jpg") no-repeat center center/cover;
+    z-index: 0;                
+}
+.head{
+    display: flex;
+    align-items:center;
+    position: relative;
+    z-index: 1;
+}
+.head h1{
+    color: rgb(189, 8, 8);
+    margin-left: 130px;
+    font-size: 37px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#lang{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 160px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left: 550px;
+}
+.btn{
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 70px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+main h1 {
+    margin: 0; 
+    line-height: 1.0; 
+}
+.main-mid{
+    color: white;
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    font-size: 58px;  
+}
+.main-mid2{
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 58px; 
+}
+.p-tag{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+.p-tag2{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.email{
+    position: relative;
+    margin-left: 350px;
+    width: 300px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 16px;
+    border: 1px solid gainsboro;
+    padding: 15px;
+    height: 20px;
+    border-radius: 3px;
+}
+.btn2{
+    position: relative;
+    background-color: red;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 16px;
+    width: 180px;
+    border-radius: 4px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.btn2:hover{
+    background-color: rgb(174, 20, 20);
+    transition: background-color 1s ease;
+}
+.lower-section {
+    background-color: black; 
+    color: white;
+    padding-top: 50px;
+    padding-left: 120px;
+}
+.lower-trends{
+    padding-left: 30px;
+}
+.trends{
+    display: flex;
+}
+.trend1{
+    width: 270px;
+    position: relative;
+}
+.trend1, .trend2{
+    margin: 0;
+    padding: 0;
+}
+.trend2{
+    margin: 0;
+    padding: 0;
+}
+.trend1 img{
+    width: 190px;
+    border-radius: 23px; 
+    padding-left: 12px;
+    height: 255px;
+    cursor: pointer;
+}
+.trend1 span{
+    font-size: 105px;              
+    font-weight: bold;             
+    color: black;                  
+    -webkit-text-stroke: 1px white; 
+    position: relative;
+    right: 222px;
+    bottom: 20px;
+}
+.trend2 img{
+    width: 183px;
+    border-radius: 23px;
+    cursor: pointer;
+}
+.trend2 span{
+    font-size: 105px;              
+    font-weight: bold;             
+    color: black;                  
+    -webkit-text-stroke: 1px white; 
+    position: relative;
+    right: 222px;
+    bottom: 20px;
+}
+.trend3 img{
+    width: 180px;
+    border-radius: 23px;
+    height: 255px;
+    cursor: pointer;
+}
+.trend3 span{
+    font-size: 105px;              
+    font-weight: bold;             
+    color: black;                  
+    -webkit-text-stroke: 1px white; 
+    position: relative;
+    right: 210px;
+    bottom: 20px;
+}
+.trend4 img{
+    width: 180px;
+    border-radius: 23px;
+    height: 255px;
+    cursor: pointer;
+}
+.trend4 span{
+    font-size: 105px;              
+    font-weight: bold;             
+    color: black;                  
+    -webkit-text-stroke: 1px white; 
+    position: relative;
+    right: 210px;
+    bottom: 20px;
+}
+.lower-section h2 {
+    font-size: 25px;
+}
+.cards-container{
+    display: flex;
+    gap: 17px;
+}
+.card1{
+    background: linear-gradient(to bottom, rgba(72, 62, 62, 0.5), rgb(40, 22, 60));
+    width: 210px;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-top: 1px;
+    height: 55vh;
+}
+.card2{
+    background: linear-gradient(to bottom, rgba(72, 62, 62, 0.5), rgb(40, 22, 60));
+    width: 210px;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-top: 1px;
+    height: 55vh;
+}
+.card3{
+    background: linear-gradient(to bottom, rgba(72, 62, 62, 0.5), rgb(40, 22, 60));
+    width: 210px;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-top: 1px;
+    height: 55vh;
+}
+.card4{
+    background: linear-gradient(to bottom, rgba(72, 62, 62, 0.5), rgb(40, 22, 60));
+    width: 210px;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-top: 1px;
+    height: 55vh;
+}
+.card1 p{
+    width: 200px;
+    color:gainsboro;
+}
+.card2 p{
+    width: 200px;
+    color:gainsboro;
+}
+.card3 p{
+    width: 180px;
+    color:gainsboro;
+}
+.card4 p{
+    width: 200px;
+    color:gainsboro;
+}
+.card1 img{
+    padding-top: 90px;
+    padding-left: 137px;
+    width: 55px;
+}
+.card2 img{
+    padding-top: 50px;
+    padding-left: 137px;
+    width: 55px;
+} 
+.card3 img{
+    padding-top: 60px;
+    padding-left: 137px;
+    width: 55px;
+} 
+.card4 img{
+    padding-top: 60px;
+    padding-left: 137px;
+    width: 55px;
+} 
+.lower-content{
+    padding-left: 30px;
+}
+.faq h2{
+    margin-left: 25px;
+    margin-top: 40px;
+}
+.faq1{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 25px 25px;
+    border: none;
+    cursor: pointer;
+    width: 83%;
+    margin-left: 27px;
+    font-size: 22px;
+}
+.faq1txt{
+    text-align: left;
+}
+.faq1+{
+    text-align: right;
+    font-weight: bold;
+}
+.faq2, .faq3, .faq4, .faq5, .faq6{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 25px 25px;
+    border: none;
+    cursor: pointer;
+    width: 83%;
+    margin-left: 27px;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.faq2txt, .faq3txt{
+    text-align: left;
+}
+.faq2+, .faq3+{
+    text-align: right;
+    font-weight: bold;
+}
+.faq1:hover, .faq2:hover, .faq3:hover, .faq4:hover, .faq5:hover, .faq6:hover{
+    background-color: rgb(88, 88, 88);
+    transition: background-color 2s ease;
+}
+.email2 p{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+}
+.email-2{
+    margin-left: 150px;
+    width: 500px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 16px;
+    border: 1px solid gainsboro;
+    padding: 13px;
+    height: 20px;
+    border-radius: 3px;
+}
+.btn3{
+    background-color: red;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 14px;
+    width: 180px;
+    border-radius: 4px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.btn3:hover{
+    background-color: rgb(174, 20, 20);
+    transition: background-color 1s ease;
+}
+.qts{
+    display: flex;
+    gap: 100px;
+}
+.qts1, .qts2, .qts3, .qts4{
+    color: rgb(164, 163, 163);
+    padding-top: 15px;
+    padding-left: 21px;
+}
+.lang2{
+    cursor: pointer;
+    background-color: rgba(33, 33, 33, 0.5);
+    color: white;
+    margin-left: 20px;
+    margin-top: 45px;
+    width: 220px;
+    padding: 7px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.netflix{
+    color: rgb(193, 193, 193);
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.link{
+    cursor: pointer;
+    color: rgb(24,119,242);
+}

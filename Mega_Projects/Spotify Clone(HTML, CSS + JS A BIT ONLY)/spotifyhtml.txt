@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img class='img1' src="spotifylogo.jpg"> 
+        <img class="img2" src="house-logo.jpg">
+        <div class="search-bar">
+            <span class="left-icon">🔍</span>
+            <input type="text" placeholder="What do you want to play?">
+            <span class="right-icon">📂</span>
+        </div>
+        <section class="p-tags">
+            <p>Premium</p>
+            <p>Support</p>
+            <p>Download</p>
+            <p>|</p>
+            <p style="padding-left: 23px; font-size: 16px;  padding-top: 4px">Install App</p>
+            <p style="padding-left: 14px; font-size: 16px; padding-top: 4px">Sign Up</p>
+            <button class="btn1">Log In</button>
+        </section>
+    </header>
+    <div class="content">
+    <nav>
+        <div class="lib" style="display: flex; justify-content: space-between; padding: 2px 22px;">
+            <h3>Your Library</h3>
+            <span class="plus">+</span>
+        </div>
+        <div class="playlist">
+            <h3>Create your first playlist</h3>
+            <p>It's easy, we'll help you</p>
+            <button class="btn2">Create playlist</button>
+        </div>
+        <hr style="width: 90%; margin-top: 30px; background-color:rgb(60, 60, 60); border: none; height: 3px;">
+        <div class="footer-links">
+            <p>Legal</p>
+            <p>Safety & Privacy Center</p>
+            <p>Privacy Policy</p>
+            <p>Cookies</p>
+            <p>About Ads</p>
+            <p>Accessibility</p>
+        </div> 
+        <p style="margin-left: 28px; font-size: 13px; cursor:pointer;">Cookies</p>    
+        <button class="lang-btn">
+            <img src="globe.png" alt="Globe" class="globe-icon">
+            English
+        </button>            
+    </nav>
+        <main>
+            <div class="main-page">
+                <h2>Trending songs</h2>
+                <p style="position: relative; right: 40px; top: 20px; color: rgb(175, 174, 174); display: block;">Show All</p>
+            </div>
+            <section class="trends" style="display: flex;">
+                <div class="trend1">
+                    <img src="daytonatrend1.jpg" alt="image" style="border-radius: 7px; width: 147px;">
+                    <h3>Daytona</h3>
+                    <p style="color: rgb(175, 174, 174);">Karan Aujla, Ikky</p>
+                </div>
+                <div class="trend2">
+                    <img src="balencitrend2.jpg" alt="image" style="border-radius: 7px; width: 150px; height: 160px">
+                    <h3>Balenci</h3>
+                    <p style="color: rgb(175, 174, 174);">Shubh</p>
+                </div>
+                <div class="trend3">
+                    <img src="jholttrend3.jpg" alt="image" style="border-radius: 7px; width: 150px; height: 157px;">
+                    <h3>Jhol</h3>
+                    <p style="color: rgb(175, 174, 174);">Maanu, Annural Khalid</p>
+                </div>
+                <div class="trend4">
+                    <img src="ravitrend4.jpg" alt="image" style="border-radius: 7px; width: 150px; height: 155px">
+                    <h3>Ravi</h3>
+                    <p style="color: rgb(175, 174, 174);">Sajjad Ali</p>
+                </div>
+                <div class="trend5">
+                    <img src="afsostrend5.jpg" alt="image" style="border-radius: 7px; width: 150px; height: 155px">
+                    <h3>Afsos</h3>
+                    <p style="color: rgb(175, 174, 174);">Anuv Jain, AP Dhillon</p>
+                </div>
+            </section>
+            <div class="art">
+            <h2 style="color: white; margin-left: 40px; margin-top: 50px">Popular artists</h2>
+            <p style="position: relative; right: 40px; top: 50px; color: rgb(175, 174, 174); display: block;">Show All</p>
+            </div>
+            <section class="artists">
+                <div class="artist1">
+                    <img src="sidhuartist1.jpg" alt="image">
+                    <h6 style="color: white; font-size: 15px">Sidhu Moose Wala</h6>
+                    <p style="color: rgb(175, 174, 174);">Artist</p>
+                </div>
+                <div class="artist2">
+                    <img src="karanartist2.jpg" alt="image" style="margin-left: 5px;">
+                    <h6 style="color: white; font-size: 15px">Karan Aujla</h6>
+                    <p style="color: rgb(175, 174, 174);">Artist</p>
+                </div>
+                <div class="artist3">
+                    <img src="shubhartist3.jpg" alt="image" style="border-radius: 50%; object-fit: cover; width: 155px; height: 155px; margin-left: 4px;">
+                    <h6 style="color: white; font-size: 15px">Shubh</h6>
+                    <p style="color: rgb(175, 174, 174);">Artist</p>
+                </div>
+                <div class="artist4">
+                    <img src="diljitartist4.jpg" alt="image" style="border-radius: 50%; object-fit: cover; width: 155px; height: 155px; margin-left: 3px;">
+                    <h6 style="color: white; font-size: 15px">Diljit Dosanjh</h6>
+                    <p style="color: rgb(175, 174, 174);">Artist</p>
+                </div>
+                <div class="artist5">
+                    <img src="guruartist5.jpg" alt="image" style="border-radius: 50%; object-fit: cover; width: 150px; height: 150px; margin-left: 3px;">
+                    <h6 style="color: white; font-size: 15px">Guru Randhawa</h6>
+                    <p style="color: rgb(175, 174, 174);">Artist</p>
+                </div>
+            </section>
+            <div class="album">
+                <h2 style="color: white; margin-left: 40px; margin-top: 50px">Popular albums</h2>
+                <p style="position: relative; right: 40px; top: 50px; color: rgb(175, 174, 174); display: block;">Show All</p>
+            </div>
+            <section class="albums" style="display: flex;">
+                <div class="album1">
+                    <img src="album1.jpg" alt="image" style="border-radius: 7px; width: 147px;">
+                    <h3>Sicario</h3>
+                    <p style="color: rgb(175, 174, 174);">Shubh</p>
+                </div>
+                <div class="album2" style="margin: 0px 0px;">
+                    <img src="album2.jpg" alt="image" style="border-radius: 7px; width: 150px; margin-top: 4px; height: 159px">
+                    <h3>Moose Tape</h3>
+                    <p style="color: rgb(175, 174, 174);">Sidhu Moose Wala</p>
+                </div>
+                <div class="album3" style="margin: 0px 3px;">
+                    <img src="album3.jpg" alt="image" style="border-radius: 7px; width: 150px; margin-top: 4px; height: 159px">
+                    <h3>Making Memories</h3>
+                    <p style="color: rgb(175, 174, 174);">Karan Aujla</p>
+                </div>
+                <div class="album4" style="margin: 0px 0px;">
+                    <img src="album4.jpg" alt="image" style="border-radius: 7px; width: 150px; margin-top: 4px; height: 159px">
+                    <h3>Ghost</h3>
+                    <p style="color: rgb(175, 174, 174);">Diljit Dosanjh</p>
+                </div>
+                <div class="album5" style="margin: 0px 3px;">
+                    <img src="album5.jpg" alt="image" style="border-radius: 7px; width: 150px; margin-top: 4px; height: 159px">
+                    <h3>PBX1</h3>
+                    <p style="color: rgb(175, 174, 174);">Sidhu Moose Wala</p>
+                </div>
+            </section>
+            <div class="radio">
+                <h2 style="color: white; margin-left: 40px; margin-top: 50px">Popular radio</h2>
+                <p style="position: relative; right: 40px; top: 50px; color: rgb(175, 174, 174); display: block;">Show All</p>
+            </div>
+            <section class="radios" style="display: flex;">
+                <div class="radio1">
+                    <img src="radio1.jpg" alt="image" style="border-radius: 7px; width: 149px; height: 165px">
+                    <p style="color: rgb(175, 174, 174); width: 150px">With Sachet Tandon, Jeet Gannguli, Prita...</p>
+                </div>
+                <div class="radio2">
+                    <img src="radio2.jpg" alt="image">
+                    <p style="color: rgb(175, 174, 174); width: 150px;">With Karan Aujla, AP Dhillon, Cheema Y a...</p>
+                </div>
+                <div class="radio3" style="margin-left: 1px;">
+                    <img src="radio3.jpg" alt="image">
+                    <p style="color: rgb(175, 174, 174); width: 150px;">With AP Dhillon, Abdul Hannan, NDS...</p>
+                </div>
+                <div class="radio4" style="margin-left: 5px;">
+                    <img src="radio4.jpg" alt="image">
+                    <p style="color: rgb(175, 174, 174); width: 150px;">With Shubh, Karan Aujla, AP Dhillon and...</p>
+                </div>
+                <div class="radio5" style="margin-left: 5px;">
+                    <img src="radio5.jpg" alt="image">
+                    <p style="color: rgb(175, 174, 174); width: 155px;">With Shubh, AP Dhillon, Gurinder Gill...</p>
+                </div>
+            </section>
+            <div class="chart">
+                <h2 style="color: white; margin-left: 40px; margin-top: 50px">Featured Charts</h2>
+                <p style="position: relative; right: 40px; top: 50px; color: rgb(175, 174, 174); display: block;">Show All</p>
+            </div>
+            <section class="charts" style="display: flex;">
+                <div class="charts1">
+                    <img src="chart1.jpg" alt="image" style="border-radius: 8px; width: 149px; height: 150px;">
+                    <p style="color: rgb(175, 174, 174); width: 150px">Your weekly update of the most played...</p>
+                </div>
+                <div class="charts2">
+                    <img src="chart2.jpg" alt="image" style="border-radius: 8px; width: 149px; height: 149px;">
+                    <p style="color: rgb(175, 174, 174); width: 155px">Your weekly update of the most played...</p>
+                </div>
+                <div class="charts3">
+                    <img src="chart3.jpg" alt="image" style="border-radius: 8px; width: 152px; height: 149px;">
+                    <p style="color: rgb(175, 174, 174); width: 155px">Your daily update of the most played...</p>
+                </div>
+                <div class="charts4">
+                    <img src="chart4.jpg" alt="image" style="border-radius: 8px; width: 155px; height: 149px;">
+                    <p style="color: rgb(175, 174, 174); width: 155px">Your daily update of the most played...</p>
+                </div>
+                <div class="charts5">
+                    <img src="chart5.jpg" alt="image" style="border-radius: 8px; width: 155px; height: 149px;">
+                    <p style="color: rgb(175, 174, 174); width: 155px">Your daily update of the most viral tracks...</p>
+                </div>
+            </section>
+            <hr style="width: 94%; margin-top: 80px; background-color:rgb(69, 69, 69); border: none; height: 1px;">
+            <section class="company" style="display: flex;">
+                <div class="foot1">
+                    <h4 style="color: white;">Company</h4>
+                    <p style="color:rgb(175, 174, 174)">About</p>
+                    <p style="color:rgb(175, 174, 174)">Jobs</p>
+                    <p style="color:rgb(175, 174, 174)">For the Record</p>
+                </div>
+                <div class="foot2" style="margin-left: 80px;">
+                    <h4 style="color: white;">Communities</h4>
+                    <p style="color:rgb(175, 174, 174)">For Artists</p>
+                    <p style="color:rgb(175, 174, 174)">Developers</p>
+                    <p style="color:rgb(175, 174, 174)">Advertising</p>
+                    <p style="color:rgb(175, 174, 174)">Investors</p>
+                    <p style="color:rgb(175, 174, 174)">Vendors</p>
+                </div>
+                <div class="foot3" style="margin-left: 80px;">
+                    <h4 style="color: white;">Useful links</h4>
+                    <p style="color:rgb(175, 174, 174)">Support</p>
+                    <p style="color:rgb(175, 174, 174)">Free Mobile App</p>
+                    <p style="color:rgb(175, 174, 174)">Popular by Country</p>
+                    <p style="color:rgb(175, 174, 174)">Import your music</p>
+                </div>
+                <div class="foot3" style="margin-left: 80px;">
+                    <h4 style="color: white;">Spotify Plans</h4>
+                    <p style="color:rgb(175, 174, 174)">Premium Indivitual</p>
+                    <p style="color:rgb(175, 174, 174)">Premium Duo</p>
+                    <p style="color:rgb(175, 174, 174)">Premium Family</p>
+                    <p style="color:rgb(175, 174, 174)">Premium Student</p>
+                    <p style="color:rgb(175, 174, 174)">Spotify Free</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+            </section>
+            <hr style="width: 94%; margin-top: 30px; background-color:rgb(69, 69, 69); border: none; height: 1px;">
+            <p style="color:rgb(175, 174, 174); font-size: 15px; margin-left: 38px; margin-top: 40px">© 2025 Spotify Qasim</p>
+        </main>
+    </div> 
+    <div id="mini-player">
+        <div id="song-info">No song playing</div>
+        <input type="range" id="progress" value="0" max="100" style="flex: 1; margin: 0 15px; appearance: none; border-radius: 10px;">
+        <span id="time">0:00 / 0:00</span>
+        <button id="play-pause">⏸️</button>
+    </div>
+    <audio id="audio-player"></audio>
+    <script src="spotify.js"></script>
+</body>
+</html>
