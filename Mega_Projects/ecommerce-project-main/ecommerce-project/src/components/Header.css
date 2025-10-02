@@ -103,9 +103,9 @@
   justify-content: end;
 }
 
-.header .orders-link {
+.header .orders-link{
   color: white;
-
+  text-decoration: underline;
   display: flex;
   align-items: center;
   padding-left: 13px;
