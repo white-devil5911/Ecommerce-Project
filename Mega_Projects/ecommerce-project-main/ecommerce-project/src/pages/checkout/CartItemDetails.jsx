@@ -1,6 +1,16 @@
-import { formatMoney } from '../../utils/money';
+import axios from "axios";
+import { formatMoney } from "../../utils/money";
 
-export function CartItemDetails({ cartItem }) {
+export function CartItemDetails({ cartItem, loadCart }) {
+  const deleteCartItem = async () => {
+    try {
+      await axios.delete(`/api/cart-items/${cartItem.productId}`);
+      await loadCart(); // reload the cart
+    } catch (error) {
+      console.error("Error deleting item:", error);
+    }
+  };
+
   return (
     <div className="cart-item-details">
       <div className="product-name">{cartItem.product.name}</div>
@@ -9,13 +19,16 @@ export function CartItemDetails({ cartItem }) {
       </div>
       <div className="product-quantity">
         <span>
-          Quantity:{' '}
-          <span className="quantity-label">{cartItem.quantity}</span>
+          Quantity: <span className="quantity-label">{cartItem.quantity}</span>
         </span>
         <span className="update-quantity-link link-primary">Update</span>
-        <span className="delete-quantity-link link-primary">Delete</span>
+        <span
+          className="delete-quantity-link link-primary"
+          onClick={deleteCartItem}
+        >
+          Delete
+        </span>
       </div>
     </div>
   );
 }
-

@@ -1,14 +1,26 @@
 import dayjs from 'dayjs';
+import axios from 'axios';
 import { DeliveryOptions } from './DeliveryOptions';
 import { formatMoney } from '../../utils/money';
 
-export function OrderSummary({ cart, deliveryOptions, loadCart}) {
+export function OrderSummary({ cart, deliveryOptions, loadCart }) {
+  // 🧠 function to delete an item
+  const handleDelete = async (productId) => {
+    try {
+      await axios.delete(`/api/cart-items/${productId}`);
+      await loadCart(); // refresh cart after deleting
+    } catch (error) {
+      console.error('Error deleting item:', error);
+    }
+  };
+
   return (
     <div className="order-summary">
       {deliveryOptions.length > 0 &&
         cart.map((cartItem) => {
           const selectedDeliveryOption = deliveryOptions.find(
-            (deliveryOption) => deliveryOption.id === cartItem.deliveryOptionId
+            (deliveryOption) =>
+              deliveryOption.id === cartItem.deliveryOptionId
           );
 
           return (
@@ -21,14 +33,14 @@ export function OrderSummary({ cart, deliveryOptions, loadCart}) {
               </div>
 
               <div className="cart-item-details-grid">
-                {/* 1️⃣ Column 1: Product Image */}
+                {/* 🖼️ Product Image */}
                 <img
                   className="product-image"
                   src={cartItem.product.image}
                   alt={cartItem.product.name}
                 />
 
-                {/* 2️⃣ Column 2: Product Details */}
+                {/* 🧾 Product Details */}
                 <div className="cart-item-details">
                   <div className="product-name">
                     {cartItem.product.name}
@@ -46,13 +58,17 @@ export function OrderSummary({ cart, deliveryOptions, loadCart}) {
                     <span className="update-quantity-link link-primary">
                       Update
                     </span>
-                    <span className="delete-quantity-link link-primary">
+                    {/* 🗑️ Delete link triggers handleDelete */}
+                    <span
+                      className="delete-quantity-link link-primary"
+                      onClick={() => handleDelete(cartItem.productId)}
+                    >
                       Delete
                     </span>
                   </div>
                 </div>
 
-                {/* 3️⃣ Column 3: Delivery Options */}
+                {/* 🚚 Delivery Options */}
                 <DeliveryOptions
                   cartItem={cartItem}
                   deliveryOptions={deliveryOptions}
