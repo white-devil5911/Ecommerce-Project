@@ -1,5 +1,5 @@
 import { formatMoney } from "../../utils/money";
-export function PaymentSummary(paymentSummary) {
+export function PaymentSummary({paymentSummary}) {
     return (
         
         <div className="payment-summary">
@@ -33,7 +33,7 @@ export function PaymentSummary(paymentSummary) {
                       <div className="payment-summary-row">
                           <div>Estimated tax (10%):</div>
                             <div className="payment-summary-money">
-                              {formatMoney(paymentSummary.TaxCents)}
+                              {formatMoney(paymentSummary.taxCents)}
                             </div>
                           </div>
           
