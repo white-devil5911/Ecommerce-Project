@@ -1,5 +1,9 @@
 {
   "devDependencies": {
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "jsdom": "^26.1.0",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/dom": "^10.4.0"
   }
 }
